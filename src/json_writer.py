@@ -1,5 +1,6 @@
 import json
 
+
 def writeJSONtoFile(fileName, object):
     with open(fileName, mode='a', encoding='utf-8') as write_file:
         # экономия памяти на пробелах:

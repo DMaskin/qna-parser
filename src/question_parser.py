@@ -13,7 +13,7 @@ headers = {
 def dowloadPage(url):
     page = requests.get(url, headers=headers)
     if page.status_code == 200:
-        print('Downloading {}... status code: {} (OK)'.format(url, page.status_code))
+        print(f'Downloading {url} status code: {page.status_code} (OK)')
     return page
 
 
